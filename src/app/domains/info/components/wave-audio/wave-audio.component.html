@@ -1,0 +1,7 @@
+<div>
+    <div #waveAudioContainer class="wave-audio-container"></div>
+    <button (click)="playPause()" class="play-button">
+        <span *ngIf="isPlaying(); else elseBlock">Pause</span>
+        <ng-template #elseBlock>Play</ng-template>
+    </button>
+</div>
